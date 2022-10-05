@@ -1,0 +1,55 @@
+  
+  
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+      <title>switch</title>
+      <meta charset="utf-8" />
+     
+  </head>
+  
+  <body>
+      <h3>Mês atual</h3>
+  
+      <form name='f_calendario' action="" method="post">
+  
+          Digite o mes atual : <input type="text" name="mes_atual" />
+          <p></p>
+          <input type="button" name="btn_concatena" value="Soma" onclick="verifica()" />
+          <input type="reset" name="btn_reseta" value="Cancelar" />
+  
+  
+      </form>
+  
+  
+      <script lenguage='javascript'>
+
+        var js_mes;
+
+        js_mes=parseInt(document.f_calendario.f_mes.value);
+/* Início da estrutura de Seleção Múltipla switch...case */
+            switch (js_mes) {
+            case 1 : document.f_calendario.mes_atual.value = 'Janeiro'; break;
+            case 2 : document.f_calendario.mes_atual.value = 'Fevereiro'; break;
+            case 3 : document.f_calendario.mes_atual.value = 'Marco'; break;
+            case 4 : document.f_calendario.mes_atual.value = 'Abril'; break;
+            case 5 : document.f_calendario.mes_atual.value = 'Maio'; break;
+            case 6 : document.f_calendario.mes_atual.value = 'Junho'; break;
+            case 7 : document.f_calendario.mes_atual.value = 'Julho'; break;
+            case 8 : document.f_calendario.mes_atual.value = 'Agosto'; break;
+            case 9 : document.f_calendario.mes_atual.value = 'Setembro'; break;
+            case 10 : document.f_calendario.mes_atual.value = 'Outubro'; break;
+            case 11 : document.f_calendario.mes_atual.value = 'Novembro'; break;
+            case 12 : document.f_calendario.mes_atual.value = 'Dezembro'; break;
+            default : document.f_calendario.mes_atual.value = '** M\u00eas Inv\u00e1lido! **'; break;
+            }
+       
+</script>
+</body>
+</html
+  
+  
+
+  
+ 

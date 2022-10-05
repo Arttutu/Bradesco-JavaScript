@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html -->
+<html class="iframe-ignore js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths browser-family-chrome browser-chrome-105 nm-complete scorm-success"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    
+	
+		<!-- InstanceBeginEditable name="doctitle" -->
+  	<title>Eventos básicos de JavaScrtipt</title>
+	<!-- InstanceEndEditable -->
+		<!-- /content/Central/frameworks/ -->
+
+        <link href="./jquery-ui.css" rel="stylesheet" type="text/css">
+        <link href="./jquery-ui.structure.css" rel="stylesheet" type="text/css">
+        <link href="./jquery-ui.theme.css" rel="stylesheet" type="text/css">
+        <link href="./bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+        <link href="./bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="./jquery.booklet.latest.css" type="text/css" rel="stylesheet">    
+        <link href="./styles.objetos-de-aprendizagem.css" rel="stylesheet" type="text/css">
+        <link href="./jquery.jqzoom.css" rel="stylesheet" type="text/css">
+        <link href="./fgv.css_three.css" rel="stylesheet" type="text/css">    
+        <link href="./fgv.hq-1.0.css" rel="stylesheet" type="text/css">    
+        <link href="./fgv.supertooltip.css" rel="stylesheet" type="text/css">    
+        <link href="./fgv.css_three.css" rel="stylesheet" type="text/css">    
+       
+        <style type="text/css"> /*#main{ visibility: hidden; }*/ </style>
+        <link href="./defaults.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript"> var framework_url = '../framework_nm_v2_1/'; </script>
+
+        <link href="./bradesco-core.css" rel="stylesheet" type="text/css">
+        <link href="./itens-comuns-bradesco_amarelo.css" rel="stylesheet" type="text/css">
+        <link href="./estilo-bradesco_amarelo.css" rel="stylesheet" type="text/css">
+        
+        <script src="./bradesco-ui.js.download"></script>        
+        <script src="./naveg-bradesco.js.download"></script>
+
+        
+     <!--[if (gt IE 8)]><!-->    
+	<!--<![endif]-->
+    
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	
+	<!--[if !(gt IE 8)]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css">
+
+		#browserWarning { display:block; width:40%; margin:15px auto; background-color:#FFF; padding: 15px; }
+		.container#main	{ display:none; }
+	</style>
+	<![endif]-->
+    
+    <script type="text/javascript">
+		var init_script = document.createElement('script');
+		init_script.setAttribute('src',         framework_url + 'js/require.js' );
+		init_script.setAttribute('data-main',   framework_url + 'js/framework' );
+		document.getElementsByTagName('head')[0].appendChild(init_script);
+	</script><script src="./require.js.download" data-main="../framework_nm_v2_1/js/framework"></script>
+    
+     <!-- InstanceBeginEditable name="head" -->
+
+    <style type="text/css">            
+
+      .background-esticado {
+        background-color: #f4e7dc;
+        border: 0px solid #f4e7dc;
+        padding: 0;
+      }
+	  .imgs img {
+		  width:100%;
+	  }
+	  .popup-colorida {
+			background-color: #FFF;
+			border: solid 1px #666;
+			color: #000;
+			border-radius:4px;
+			text-shadow: none;
+			padding-bottom:40px;
+      z-index: 100;
+		}
+		.amarelo .container .popup-colorida h3 {
+			color:#0072bb;	
+		}
+
+		.popup-colorida button {
+			background-color: #FFF;
+			color: #666;
+		}
+		.popup-colorida button:hover {
+			background-color: #666;
+			color: #FFF;
+		}
+
+    .popup-colorida.lg {
+      margin-top: -340px;
+    }
+    
+
+    .tabelaPadrao th {
+      background-color: #853609 !important;
+      color: #ffffff !important;
+    }
+
+    .tabelaPadrao th {
+      background-color: #853609 !important;
+      color: #ffffff !important;
+    }
+
+    .tabelaPadrao {
+      background-color: #ffffe7;
+    }
+
+    .tabelaPadrao > thead > tr > th, .tabelaPadrao > tbody > tr > td {
+      border: 1px solid #000000;
+    }
+
+    </style>
+
+       
+  	<!-- InstanceEndEditable -->
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="framework" src="./framework.js.download"></script><script src="./jquery.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modernizr" src="./modernizr.custom.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="browserDetect" src="./detect.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="./lodash.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nm_ui" src="./fgv.nm-ui.1.0.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jq_equalheight" src="./jquery.equalheight.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jq_matchheight" src="./jquery.matchHeight.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./bootstrap.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bot_tabcollapse" src="./bootstrap-tabcollapse.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jq_easing" src="./jquery.easing.1.3.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="scorm" src="./fgv.scorm.1.0.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="nm_nav" data-requiremodule="lodash" src="./lodash.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="nm_nav" data-requiremodule="nm_nav" src="./fgv.nm-nav.js.download"></script></head>
+
+	<!-- InstanceParam name="tipo" type="text" value="padrao" -->
+	<!-- InstanceParam name="cor" type="text" value="amarelo" -->
+   
+  <body class="padrao amarelo">
+	 
+	<div id="preloadWrapper">
+    	 <div class="spinner">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+         </div>
+    	<div id="preload"></div>    
+    </div>
+    <div id="browserWarning">
+		<h2>Atenção!</h2>
+		<p>Seu navegador não é compatível com este curso. Instale um dos navegadores a seguir:</p>
+    <ul>
+      <li><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank"><img src="./chrome.png"> Google Chrome</a></li>
+      <li><a href="https://www.mozilla.org/pt-BR/" target="_blank"><img src="./firefox.png"> Mozilla Firefox</a></li>
+      <li><a href="https://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank"><img src="./ie10.png"> Internet Explorer 9+</a></li>
+    </ul>
+	</div>
+    <!-- Topo -->
+    <div class="header">
+
+        <div class="topo">
+            <div class="titulo"><!-- InstanceBeginEditable name="Nome do Bloco" -->INTRODUÇÃO AO JAVASCRIPT<!-- InstanceEndEditable --></div>
+            <div class="topo-logo"></div>
+        </div>
+        
+  <nav id="barrasuperior hidden-xs" role="navigation">            
+	
+    
+    <ol class="breadcrumb hidden-xs">
+      <li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/index.html"></a></li>
+      
+      <li><!-- InstanceBeginEditable name="Nome da Licao" --><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_0_0.html">Capítulo  3: Métodos Complementares da Linguagem de Programação JavaScript</a><!-- InstanceEndEditable --></li>
+      <li class="active"><span><!-- InstanceBeginEditable name="Nome do Capítulo" -->Tópico 3: Eventos<!-- InstanceEndEditable --></span></li>
+    </ol>
+
+  </nav> 
+        
+  </div>
+    <!-- Fim topo -->
+	<div id="main" class="container">
+        <div class="content">
+			<!-- InstanceBeginEditable name="Conteudo" -->
+
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Eventos Básicos de JavaScript</h1>
+          </div> 
+        </div> 
+        <p>Para finalizarmos o aprendizado sobre linguagem de programação JavaScript e enriquecer ainda mais seus conhecimentos e sua formação técnica, vamos conhecer os eventos básicos de JavaScript. Clique na imagem para ampliá-la.</p>
+<div class="background-esticado espaco_v_bottom_20">
+      <div class="container">
+       	   <div class="row">
+              <div class="col-sm-4 center">
+                  <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#texto-popupcolorida-01" data-popupcolorida="true" data-size="lg" id="popup-cor-01"><img src="./3_3_1.png" class="img-responsive" data-anima-direction="right-to-left" alt=""></a>
+             </div>
+   	    </div>
+            
+      </div>
+      </div>
+      <div class="popup-colorida open popup-cor-01 lg" style="transition: all 0.3s ease 0s; left: 570px; top: 273px; transform: scale(1);">
+		<div class="textos">
+			<button>X</button>
+			<div id="texto-popupcolorida-01" class="">
+            	<div class="contpop">
+                    <div class="row">
+                        <div class="col-sm-10 center">
+                            <!-- <img src="img/3_3_1.jpg" class="img-responsive center-block"> -->
+                            
+                            <p class="centralizado"><strong>Eventos Básicos do JavaScript</strong></p>
+                            <table class="tabelaPadrao">
+                                <thead>
+                                  <tr>
+                                    <th>Evento</th>
+                                    <th>Ação do Evento</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><em>onchange</em></td>                        
+                                    <td>O conteúdo de um elemento foi alterado e o elemento perdeu o foco (o usuário seleciona outra caixa).</td>                        
+                                  </tr>
+                                  <tr>
+                                    <td><em>onblur</em></td>                        
+                                    <td>O usuário apenas seleciona outra caixa, não precisando alterar necessariamente o seu conteúdo.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onabort</em></td>                        
+                                    <td>Uma transferência de imagem é interrompida pelo usuário.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onclick</em></td>                        
+                                    <td>O usuário clica usando o <em>mouse</em>.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onfocus</em></td>                        
+                                    <td>Um elemento do formulário ganha foco.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onkeydown</em></td>                        
+                                    <td>O usuário pressiona uma tecla.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onkeypress</em></td>                        
+                                    <td>O usuário pressiona uma tecla e depois a solta.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onkeyup</em></td>                        
+                                    <td>O usuário solta uma tecla.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onload</em></td>                        
+                                    <td>Um documento e todos os seus filhos são carregados.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onmousedown</em></td>                        
+                                    <td>Um botão do <em>mouse</em> é pressionado.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onmousemove</em></td>                        
+                                    <td>O <em>mouse</em> recebe um clique duplo.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onmouseout</em></td>                        
+                                    <td>O cursor do <em>mouse</em> sai de um elemento.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onmouseover</em></td>                        
+                                    <td>O cursor do <em>mouse</em> entra em um elemento.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onmouseup</em></td>                        
+                                    <td>Um botão do <em>mouse</em> é liberado.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onreset</em></td>                        
+                                    <td>Um formulário é reiniciado, ou seja, o usuário clica em um botão <em>reset</em>.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onresize</em></td>                        
+                                    <td>O tamanho de um objeto muda, ou seja, o usuário redimensiona uma janela ou <em>frame</em>.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onselect</em></td>                        
+                                    <td>Uma seleção de texto é iniciada (para <em>input</em> ou <em>textarea</em>).</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onsubmit</em></td>                        
+                                    <td>Um formulário é submetido.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><em>onunload</em></td>                        
+                                    <td>Uma página está para ser descarregada.</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                  </div>
+                </div>
+			</div>
+           
+		</div>
+	</div><div class="popup-colorida-overlay"></div>
+          
+          
+        <!-- InstanceEndEditable --> 
+      </div>
+    </div>
+    <footer class="navegacao">
+    	<nav class="menu navbar navbar-default navbar-fixed-bottom row  menu-nav-inferior">
+        
+        <nav class="">
+    <div class="col-xs-3 col-sm-5 col-md-4 col-lg-4">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-left" role="tablist">
+                <li id="bt_instrucoes" class="bt_abrir bt_abrir_instrucoes">
+                    <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/instrucoes.html" data-toggle="modal" data-placement="top" title="Instruções" data-original-title="Instruções" aria-label="Instruções" data-target=".bs-instucoes-modal-sm">
+                        <svg version="1.1" id="informacao" x="0px" y="0px" viewBox="-74 76 50 50" style="enable-background:new -74 76 50 50;" xml:space="preserve"><g><g id="informacoes"><g><path d="M-49,96.3c1,0,1.9-0.8,1.9-1.9c0-1-0.8-1.9-1.9-1.9c-1,0-1.9,0.8-1.9,1.9S-50,96.3-49,96.3z M-49,86c-8.3,0-15,6.7-15,15 s6.7,15,15,15s15-6.7,15-15S-40.7,86-49,86z M-49,114.2c-7.2,0-13.1-5.9-13.1-13.2c0-7.2,5.9-13.1,13.1-13.1s13.1,5.9,13.1,13.1 S-41.8,114.2-49,114.2z M-47.1,107.6H-48v-8.4l0,0l0,0c0-0.5-0.4-0.9-0.9-0.9h-1.9c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h0.9 v7.5h-0.9c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h3.7c0.5,0,0.9-0.4,0.9-0.9S-46.6,107.6-47.1,107.6z"></path></g></g></g></svg>
+                    </a>
+                </li>
+                <li data-toggle="tooltip" id="bt_glossario" class="bt_abrir bt_abrir_sumario">
+                    <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#" data-toggle="modal" data-placement="top" title="Menu" data-original-title="Menu" aria-label="Menu" data-target=".bs-menu-modal-sm">
+                        <svg version="1.1" id="menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-272 395.9 50 50" enable-background="new -272 395.9 50 50" xml:space="preserve"><g><g><path d="M-245.1,407.3l7.7,7.7v19.4h-19.2v-27.1H-245.1 M-244.2,405h-12.4c-1.2,0-2.3,1-2.3,2.3v27.1 c0,1.2,1,2.3,2.3,2.3h19.2c1.2,0,2.3-1,2.3-2.3v-20.3L-244.2,405L-244.2,405z"></path><path d="M-236.3,416.3h-10.1v-10.1h2.3v7.8h7.8V416.3z"></path></g><g><g><path d="M-240.6,422h-13c-0.4,0-0.8,0.3-0.8,0.8s0.3,0.8,0.8,0.8h13c0.4,0,0.8-0.3,0.8-0.8 C-239.8,422.4-240.1,422-240.6,422z M-253.4,420.6h13c0.4,0,0.8-0.3,0.8-0.8c0-0.4-0.3-0.8-0.8-0.8h-13c-0.4,0-0.8,0.3-0.8,0.8 C-254.2,420.3-253.9,420.6-253.4,420.6z"></path></g></g><g><g><path d="M-240.6,427.8h-13c-0.4,0-0.8,0.3-0.8,0.8s0.3,0.8,0.8,0.8h13c0.4,0,0.8-0.3,0.8-0.8 C-239.8,428.1-240.1,427.8-240.6,427.8z M-253.4,426.4h13c0.4,0,0.8-0.3,0.8-0.8c0-0.4-0.3-0.8-0.8-0.8h-13 c-0.4,0-0.8,0.3-0.8,0.8C-254.2,426.1-253.9,426.4-253.4,426.4z M-244.8,430.6h-8.6c-0.4,0-0.8,0.3-0.8,0.8s0.3,0.8,0.8,0.8h8.6 c0.4,0,0.8-0.3,0.8-0.8C-244.2,431-244.5,430.6-244.8,430.6z"></path></g></g></g></svg>
+                    </a>
+                </li>
+                <li id="bt_sumario" data-placement="top" data-toggle="tooltip" title="Glossário" data-original-title="Glossário" class="bt_abrir bt_abrir_glossario">
+                    <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#" data-toggle="modal" aria-label="Glossário" data-target=".bs-glossario-modal-sm">
+                        <svg version="1.1" id="glossario" x="0px" y="0px" viewBox="-74 76 50 50" style="enable-background:new -74 76 50 50;" xml:space="preserve"><path id="C" class="st0" d="M-38,102.9c0.3-0.4,0.7-0.6,1.2-0.6c0.6,0,1,0.1,1.2,0.4c0.3,0.3,0.4,0.7,0.4,1.3h1.6l0,0 c0-0.9-0.3-1.6-0.9-2.2c-0.5-0.6-1.3-0.8-2.3-0.8s-1.8,0.3-2.4,1c-0.6,0.7-0.9,1.5-0.9,2.5v1.7c0,1,0.3,1.9,1,2.5 c0.6,0.6,1.5,1,2.5,1s1.8-0.3,2.4-0.8c0.6-0.5,0.8-1.2,0.8-2.1l0,0H-35c0,0.6-0.1,1-0.4,1.3c-0.3,0.3-0.6,0.4-1.2,0.4 c-0.5,0-1-0.2-1.3-0.6s-0.5-0.9-0.5-1.6v-1.7C-38.5,103.8-38.3,103.3-38,102.9z"></path><path id="A" class="st0" d="M-51.2,101.1H-53l-2.9,8.4h1.7l0.6-1.8h3l0.6,1.8h1.7L-51.2,101.1z M-53.2,106.4l1.1-3.3l1,3.3H-53.2z"></path><path id="B" class="st0" d="M-41.5,105.9c-0.3-0.4-0.6-0.6-1.1-0.7c0.3-0.2,0.6-0.5,0.8-0.8c0.2-0.3,0.3-0.7,0.3-1 c0-0.8-0.3-1.3-0.8-1.7c-0.6-0.4-1.3-0.6-2.3-0.6h-2.9v8.4h3.3c1,0,1.7-0.2,2.3-0.6c0.5-0.4,0.8-1,0.8-1.8 C-41.1,106.6-41.2,106.2-41.5,105.9z M-45.7,102.4h1.1c0.5,0,0.9,0.1,1.1,0.3s0.4,0.5,0.4,0.9c0,0.4-0.1,0.6-0.4,0.8 c-0.2,0.2-0.6,0.3-1,0.3h-1.2V102.4L-45.7,102.4L-45.7,102.4z M-43.3,107.9c-0.2,0.2-0.6,0.3-1,0.3h-1.6v-2.4h1.7 c0.4,0,0.8,0.1,1,0.3c0.2,0.2,0.3,0.5,0.3,0.9S-43,107.7-43.3,107.9z"></path><path id="forma" class="st0" d="M-42.2,113.4h-18.5v-3.2h1.1c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9h-1.1v-3.6h1.1 c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9h-1.1v-3.6h1.1c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9h-1.1V94h1.1c0.5,0,0.9-0.4,0.9-0.9 s-0.4-0.9-0.9-0.9h-1.1v-3.7h18.5V99h2.1V88.5c0-1.1-0.9-2-2-2h-18.7c-0.2,0-0.4,0-0.5,0.1h-0.1c-0.3,0.1-0.6,0.3-0.8,0.5l-0.1,0.1 c-0.1,0.1-0.1,0.2-0.2,0.2c0,0,0,0.1-0.1,0.1c0,0.1-0.1,0.2-0.1,0.3v0.1c0,0.1-0.1,0.3-0.1,0.4v3.8h-0.8c-0.5,0-0.9,0.4-0.9,0.9 s0.4,0.9,0.9,0.9h0.8v3.6h-0.8c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h0.8v3.6h-0.8c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h0.8 v3.6h-0.8c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h0.8v3.3c0,0.2,0,0.3,0.1,0.4v0.1c0,0.1,0.1,0.2,0.1,0.3c0,0,0,0.1,0.1,0.1 c0.1,0.1,0.1,0.2,0.2,0.2l0.1,0.1c0.2,0.2,0.5,0.4,0.8,0.5h0.1c0.2,0,0.3,0.1,0.5,0.1H-42c1.1,0,2-0.9,2-2v-2.5h-2.1v2.7H-42.2z"></path></svg>
+                    </a>
+                </li>
+                <li id="bt_pdf" class="bt_abrir bt_abrir_pdf">
+                    <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/anexos.html" data-toggle="modal" data-placement="top" title="Anexos" data-original-title="Anexos" aria-label="Anexos" data-target=".bs-anexos-modal-sm">
+                        <svg version="1.1" id="bot_pdf" x="0px" y="0px" viewBox="-74 76 50 50" style="enable-background:new -74 76 50 50;" xml:space="preserve"><path id="P" class="st0" d="M-50.7,101.5c-0.6-0.5-1.4-0.7-2.3-0.7h-3.4v8.5h1.7v-3.1h1.7c1,0,1.8-0.2,2.3-0.7 c0.6-0.5,0.9-1.1,0.9-2C-49.8,102.7-50.1,102-50.7,101.5z M-51.9,104.6c-0.3,0.3-0.6,0.4-1.1,0.4h-1.7v-2.8h1.7 c0.5,0,0.9,0.1,1.1,0.4c0.3,0.2,0.4,0.6,0.4,1C-51.5,104-51.6,104.3-51.9,104.6z"></path><path id="D" class="st0" d="M-42.9,101.8c-0.7-0.6-1.5-1-2.6-1h-3v8.5h3c1.1,0,1.9-0.3,2.6-1c0.7-0.7,1-1.5,1-2.5v-1.4 C-41.9,103.4-42.2,102.5-42.9,101.8z M-43.6,105.8c0,0.7-0.2,1.2-0.5,1.6c-0.4,0.4-0.8,0.6-1.5,0.6h-1.1v-5.9h1.1 c0.6,0,1.1,0.2,1.5,0.6c0.4,0.4,0.5,0.9,0.5,1.6V105.8z"></path><polygon id="F" class="st0" points="-34.5,102.2 -34.5,100.9 -40.5,100.9 -40.5,109.4 -38.8,109.4 -38.8,105.9 -35.2,105.9 -35.2,104.6 -38.8,104.6 -38.8,102.3 -34.5,102.3 "></polygon><path id="base" class="st0" d="M-42.6,111.1v2.4h-18.8V88.6h9.9v8.3h8.8V99h2.1v-4.2l-8.7-8.3h-12.2c-1.1,0-2,0.9-2,2v25.1 c0,1.1,0.9,2,2,2h19c1.1,0,2-0.9,2-2v-2.5H-42.6z M-49.3,89.3l5.7,5.5h-5.7V89.3z"></path></svg>
+                    </a>
+                </li>                
+                <!--<li class="bt_abrir bt_abrir_usuario">
+                     <a href="#" data-toggle="tooltip" data-placement="top" title="Objetos de Aprendizagem" data-original-title="Objetos de Aprendizagem" aria-label="Objetos de Aprensizagem">-->
+                <li id="bt_objetos" data-toggle="tooltip" class="bt_abrir bt_abrir_referencias">
+                    <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#" data-toggle="modal" data-placement="top" title="Objetos de Aprendizagem" data-original-title="Objetos de Aprendizagem" aria-label="Objetos de Aprensizagem" data-target=".bs-referencias-modal-sm">
+                        <svg version="1.1" id="objetos" x="0px" y="0px" viewBox="-74 76 50 50" style="enable-background:new -74 76 50 50;" xml:space="preserve"><path class="st0" d="M-48.9,95.6c-3.1,0-5.6,2.4-5.6,5.4s2.5,5.4,5.6,5.4c3.1,0,5.6-2.4,5.6-5.4S-45.8,95.6-48.9,95.6z M-48.9,104.7 c-2.1,0-3.8-1.7-3.8-3.7s1.7-3.6,3.7-3.6c2.1,0,3.7,1.6,3.7,3.6C-45.2,103-46.8,104.7-48.9,104.7z M-34,100.8v-0.1l0,0v-0.1 c-2.7-6-8.6-9.5-14.8-9.5c-6.3,0-12.2,3.5-15,9.5v0.1l0,0v0.1c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2,0,0.2v0.1l0,0v0.1 c2.7,6,8.6,9.5,14.9,9.5c6.3,0,12.2-3.4,14.9-9.5v-0.1l0,0v-0.1c0-0.1,0-0.2,0-0.2C-34,100.9-34,100.9-34,100.8z M-49,109.2 c-5.3,0-10.5-2.7-13.1-8.2c2.5-5.4,7.8-8.2,13.1-8.2s10.5,2.8,13,8.2C-38.5,106.5-43.7,109.2-49,109.2z"></path></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-5 col-sm-2 col-md-4 col-lg-4"><pre class="pages">22 / 26</pre></div>
+    <div class="col-xs-4 col-sm-5 col-md-4 col-lg-4">
+        <div id="paginacao" class="navegacao nav navbar-nav navbar-right">
+            <div class="previous pag_box btn">
+                <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_0.html" data-toggle="tooltip" data-placement="top" title="Voltar" data-original-title="Voltar" aria-label="Voltar para tela anterior"><svg version="1.1" id="seta_esq" x="0px" y="0px" width="23px" height="21px" viewBox="-89 89 20 23" style="enable-background:new -89 89 20 23;" xml:space="preserve"><path class="st0" d="M-70.5,110.6l-17-10.1l17-10.1V110.6 M-70.5,112c0.3,0,0.5-0.1,0.7-0.2c0.5-0.2,0.8-0.7,0.8-1.2V90.5 c0-0.5-0.3-1-0.8-1.3c-0.2-0.1-0.4-0.2-0.7-0.2s-0.5,0.1-0.8,0.2l-17,10.1c-0.4,0.3-0.7,0.7-0.7,1.2s0.3,1,0.7,1.2l17,10.1 C-71,111.9-70.8,112-70.5,112L-70.5,112z"></path></svg></a>
+            </div>
+             <div class="next pag_box btn">
+                <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_2.html" data-toggle="tooltip" data-placement="top" title="Avançar" data-original-title="Avançar" aria-label="Avançar para tela seguinte"><svg version="1.1" id="seta_dir" x="0px" y="0px" width="23px" height="21px" viewBox="-89 89 20 23" style="enable-background:new -89 89 20 23;" xml:space="preserve"><path class="st0" d="M-87.5,90.4l17,10.1l-17,10.1V90.4 M-87.5,89c-0.3,0-0.5,0.1-0.7,0.2c-0.5,0.2-0.8,0.7-0.8,1.2v20.1 c0,0.5,0.3,1,0.8,1.3c0.2,0.1,0.4,0.2,0.7,0.2s0.5-0.1,0.8-0.2l17-10.1c0.4-0.3,0.7-0.7,0.7-1.2s-0.3-1-0.7-1.2l-17-10.1 C-87,89.1-87.2,89-87.5,89L-87.5,89z"></path></svg></a>
+            </div>
+        </div>
+    </div>
+</nav></nav>
+    </footer>
+	<div id="modal-pop-tela">
+    	<div class="pop-tela-content-wrap">
+        	<div id="fechar"><span></span></div>
+	    	<div class="pop-tela-content"></div>
+        </div>
+    </div>
+
+<!-- InstanceEnd -->
+<!-- Modal --><div class="modal fade" id="modal_framework" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h4 class="modal-title" id="modal_framework_title">Modal title</h4></div><div class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button></div></div><!-- /.modal-content --></div><!-- /.modal-dialog --></div><!-- /.modal --><div><div id="MenuSCO" style="width:25px;height:100%;position: fixed;top: 0;left: 0;z-index: 99999999;padding: 0px;">  <a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#" style="top: 50%; position: relative; display: block" onclick="this.parentNode.style.display=&#39;none&#39;; top.apiChangeSplitter();"><div class="divf" style="background: url(/mpls/Custom/Cds/THEMES//ClosedMultiploSCOs_MOBI_v5/Templates/arrows-box.png); height: 42px; width: 18px;"> <span style="margin: 14px 3px;border-right: 7px solid transparent; border-left: 7px solid #FFF; border-bottom: 7px solid transparent; border-top: 7px solid transparent; display: inline-block; "> </span> </div></a></div></div><div id="nav_menu" class="menu modal fade bs-menu-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"><div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>        <h4 class="modal-title">Sumário</h4>      </div>      <div class="modal-body">      	<ul>			<li data-pageindex="139" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_0_0.html"> Capítulo 3: Métodos Complementares da Linguagem de Programação Javascript</a></li>			<ul class="bullet-2 sub_nivel">			<li data-pageindex="140" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_0.html"> Tópico 1: Método <em>confirm()</em></a></li>			<ul class="bullet-3 sub_nivel">			<li data-pageindex="141" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_1.html"> Função do Método<em> confirm()</em></a></li>			<li data-pageindex="142" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_2.html"> Método <em>confirm()</em></a></li>			<li data-pageindex="143" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_3.html"> Prática de Uso do Método <em>confirm()</em></a></li>			<li data-pageindex="144" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_4.html"> Prática de Uso do Método <em>confirm()</em></a></li>			<li data-pageindex="145" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_5.html"> Exercícios de fixação</a></li>			<li data-pageindex="146" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_1_6.html"> Encerramento do tópico</a></li>      	</ul>			<li data-pageindex="147" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_0.html"> Métodos <em>toUpperCase()</em> e <em>toLowerCase()</em></a></li>			<ul class="bullet-3 sub_nivel">			<li data-pageindex="148" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_1.html"> JavaScript Sensitive</a></li>			<li data-pageindex="149" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_2.html"> JavaScript Sensitive</a></li>			<li data-pageindex="150" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_3.html"> Método <em>toUpperCase()</em></a></li>			<li data-pageindex="151" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_4.html"> Método <em>toUpperCase()</em></a></li>			<li data-pageindex="152" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_5.html"> Prática de Uso do Método <em>toUpperCase()</em></a></li>			<li data-pageindex="153" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_6.html"> Execução do Programa no Navegador Padrão</a></li>			<li data-pageindex="154" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_7.html"> Método <em>toLowerCase()</em></a></li>			<li data-pageindex="155" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_8.html"> Prática de Uso do Método <em>toLowerCase()</em></a></li>			<li data-pageindex="156" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_9.html"> Execução do Programa no Navegador Padrão</a></li>			<li data-pageindex="157" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_10.html"> Exercícios de fixação</a></li>			<li data-pageindex="158" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_2_11.html"> Encerramento do tópico</a></li>      	</ul>			<li data-pageindex="159" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_0.html"> Tópico 3: Eventos</a></li>			<ul class="bullet-3 sub_nivel">			<li data-pageindex="160" class="visited"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html"> Eventos Básicos de JavaScript</a></li>			<li data-pageindex="161"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_2.html"> Sugestão</a></li>			<li data-pageindex="162"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_3.html"> Exercícios de fixação</a></li>			<li data-pageindex="163"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_4.html"> Encerramento do tópico</a></li>      	</ul>			<li data-pageindex="164"><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_4_0.html"> Síntese</a></li>      	</ul>      	</ul>      </div>      <div class="modal-footer">      </div>    </div>  </div></div><div id="nav_glossario" class="modal glossario fade bs-glossario-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"><div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>        <h4 class="modal-title">Glossário</h4>      </div>      <div class="modal-body">      	<ul class="letras">			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#a" disabled="" class="disabled" data-letra="a"> A</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#b" disabled="" class="disabled" data-letra="b"> B</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#c" class="" data-letra="c"> C</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#d" disabled="" class="disabled" data-letra="d"> D</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#e" disabled="" class="disabled" data-letra="e"> E</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#f" class="" data-letra="f"> F</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#g" disabled="" class="disabled" data-letra="g"> G</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#h" disabled="" class="disabled" data-letra="h"> H</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#i" disabled="" class="disabled" data-letra="i"> I</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#j" disabled="" class="disabled" data-letra="j"> J</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#k" disabled="" class="disabled" data-letra="k"> K</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#l" class="" data-letra="l"> L</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#m" class="" data-letra="m"> M</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#n" disabled="" class="disabled" data-letra="n"> N</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#o" class="" data-letra="o"> O</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#p" class="" data-letra="p"> P</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#q" disabled="" class="disabled" data-letra="q"> Q</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#r" disabled="" class="disabled" data-letra="r"> R</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#s" class="" data-letra="s"> S</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#t" disabled="" class="disabled" data-letra="t"> T</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#u" disabled="" class="disabled" data-letra="u"> U</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#v" class="" data-letra="v"> V</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#w" disabled="" class="disabled" data-letra="w"> W</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#x" disabled="" class="disabled" data-letra="x"> X</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#y" disabled="" class="disabled" data-letra="y"> Y</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#z" disabled="" class="disabled" data-letra="z"> Z</a></li>      	</ul>      	<div id="accordion" class="panel-group palavras">      	</div>      </div>      <div class="modal-footer">      </div>    </div>  </div></div><div id="nav_instrucao" class="instrucao modal fade bs-instucoes-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"><div class="modal-dialog modal-md">    <div class="modal-content">    </div>  </div></div><div id="nav_anexos" class="anexos modal fade bs-anexos-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"><div class="modal-dialog modal-md">    <div class="modal-content">    </div>  </div></div><div id="nav_referencias" class="modal referencias fade bs-referencias-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"><div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>        <h4 class="modal-title">Objetos de aprendizagem</h4>      </div>      <div class="modal-body">      	<ul class="letras">			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#podcast" class="hidden" data-letra="podcast"> <span lang="en">Podcast</span></a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#infografico" class="" data-letra="infografico"> Infográfico</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#demonstracao" class="" data-letra="demonstracao"> Demonstração</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#mapaconceitual" class="" data-letra="mapaconceitual"> Mapa conceitual</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#video" class="" data-letra="video"> Vídeo</a></li>			<li><a href="https://lms.ev.org.br/mpls/Custom/Cds/COURSES/2506-INTR_JAVA/pag/3_3_1.html#whiteboard" class="" data-letra="whiteboard"> <span lang="en">Whiteboard</span></a></li>      	</ul>      	<ul class="palavras">      	</ul>      </div>      <div class="modal-footer">      </div>    </div>  </div></div></body></html>

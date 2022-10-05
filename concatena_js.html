@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+<meta charset="utg-8"/>
+<meta charset ="utf-8">
+</head>
+
+<body>
+    <h3>Boas vindas ao JavaScript</h3>
+
+    <form name = 'Concatenaformulario' action="" method="post">
+        Digite o nome : <input type="text" name="f_nome"    /> <p></p>
+        Digite um sobrenome : <input type="text" name="f_sobrenome" /> <p></p>
+        <input type = "button" name = "btn_concatena" value="Concatenar" onclick="concatena()"/>
+        <input type = "reset" name = "btn_reseta" value="Cancelar"/>
+
+
+    </form>
+
+
+    <script lenguage ='JavaScript'>
+        /*
+        OBJETIVO: capturar o nome do usuario e mostrar uma mensagem personalizada
+
+
+        */
+        /* DECLARAÇÂO de várivaveis*/
+
+        var nome;
+        var sobrenome;
+        var nomecompleto;
+
+        /* ENTRADA DE DADOS */
+        function concatena(){
+
+        nome = document.Concatenaformulario.f_nome.value;
+        sobrenome = document.Concatenaformulario.f_sobrenome.value;
+
+        /* PROCESSAMENTOS DE DADOS */
+
+        nomecompleto = nome + " " + sobrenome;
+
+        /* SAÍDA DE DADOS */
+
+        window.alert(nomecompleto + ' Seja muito Bem vindo');
+
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ordenação</title>
+    <meta charset="utf-8" />
+   
+</head>
+
+<body>
+    <h3>Maior</h3>
+
+    <form name='somaformulario' action="" method="post">
+
+        Digite o primeiro número : <input type="text" name="primeiro" />
+        <p></p>
+        Digite o segundo número : <input type="text" name="segundo" />
+        <p></p>
+        <input type="button" name="btn_concatena" value="Soma" onclick="verifica()" />
+        <input type="reset" name="btn_reseta" value="Cancelar" />
+
+
+    </form>
+
+
+    <script lenguage='javascript'>
+
+
+        /* OBJETIVO DESENVOLVER UM PROGRAMA PARA FAZER A SOMA DE DOIS NUMEROS ATRAVES DE UM FORMULÁRIO */
+
+
+
+        /* Declaração das váriaveis */
+        var primeironumero;
+        var segundonuemro;
+        var auxiliar;
+
+        /* definição da função soma() para capturar dados*/
+        function verifica() {
+            //Entrada de dados
+            primeironumero = parseInt(document.somaformulario.primeiro.value);
+            segundonuemro = parseInt(document.somaformulario.segundo.value);
+
+            //processamento de dados
+            if ( primeironumero > segundonuemro){
+                aux = primeironumero;
+                primeironumero = segundonuemro;
+                segundonuemro = aux;
+                window.alert('Classificação em ordem crescente ' + primeironumero + " , " + segundonuemro)
+            }
+            else{
+                window.alert( 'O primeiro número é : '+ primeironumero.toString() + '  O segundo número é : ' + segundonuemro.toString());
+            }
+            //Saída de dados
+            window.alert('A soma dos numéros é : ' + Soma.toString());
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
